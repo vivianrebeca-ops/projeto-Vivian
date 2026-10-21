@@ -1,0 +1,121 @@
+
+body {
+    background-color: plum;
+    color: #333;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.titulo-principal {
+    background-color: #c09cdf;
+    color: #700f8d;
+    border: 2px solid #e5a7c3;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.foto-perfil {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    object-fit: cover;
+}
+
+.lista-sites {
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.lista-sites a {
+    display: inline-block;
+}
+
+.icone-site {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    transition: transform 0.25s ease;
+}
+
+.icone-site:hover {
+    transform: scale(1.12);
+}
+
+.tabela-gostos {
+    width: 100%;
+    border-collapse: collapse;
+    border-color: #ffb6c1;
+}
+
+.tabela-gostos thead th {
+    background-color: #f8c8dc;
+    color: #9e286c;
+    border: 1px solid #ffb6c1;
+    padding: 12px;
+}
+
+.tabela-gostos tbody td {
+    background-color: #fff;
+    border: 1px solid #ffb6c1;
+    padding: 12px;
+}
+
+.tabela-gostos tbody tr:nth-child(even) td {
+    background-color: #fff5f8;
+}
+
+footer {
+    border-top: 1px solid #f3c4d8;
+    margin-top: 30px;
+    padding: 18px;
+    color: #8c3768;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .titulo-principal {
+        font-size: 2rem;
+    }
+
+    .foto-perfil {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .titulo-principal {
+        font-size: 1.7rem;
+    }
+
+    .foto-perfil {
+        max-width: 190px;
+    }
+
+    
+
+    .icone-site {
+        width: 48px;
+        height: 48px;
+    }
+
+    .tabela-gostos th,
+    .tabela-gostos td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .titulo-principal {
+        font-size: 1.45rem;
+    }
+
+    .accordion-body {
+        padding: 12px;
+    }
+
+    .icone-site {
+        width: 42px;
+        height: 42px;
+    }
+}
